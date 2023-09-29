@@ -1,0 +1,52 @@
+/* Add your custom styles here */
+
+body {
+    background-color: #fff;
+    color: #24262b;
+}
+
+.navbar {
+    background-color: #38B6FF;
+}
+
+.navbar-dark .navbar-toggler-icon {
+    background-color: #003366;
+}
+
+.content {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.content h1 {
+    font-size: 36px;
+    color: #003366;
+}
+
+.content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.footer {
+    background-color: #003366;
+    color: #fff;
+    padding: 20px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Add your custom animations here */
+.btn-primary:hover {
+    animation: shake 0.5s;
+}
+
+@keyframes shake {
+    0% { transform: translate(0, 0); }
+    20% { transform: translate(-5px, 0); }
+    40% { transform: translate(5px, 0); }
+    60% { transform: translate(-5px, 0); }
+    80% { transform: translate(5px, 0); }
+    100% { transform: translate(0, 0); }
+}
