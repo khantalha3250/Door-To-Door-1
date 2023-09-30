@@ -1,6 +1,7 @@
 /* Add your custom styles here */
 
 body {
+    position: relative;
     background-color: #fff;
     color: #24262b;
 }
