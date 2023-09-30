@@ -31,8 +31,8 @@ body {
 .footer {
     background-color: #003366;
     color: #fff;
-    padding: 20px 0;
-    position: absolute;
+    padding: 10px 0;
+    /* position: absolute; */
     bottom: 0;
     width: 100%;
 }
@@ -49,4 +49,29 @@ body {
     60% { transform: translate(-5px, 0); }
     80% { transform: translate(5px, 0); }
     100% { transform: translate(0, 0); }
+}
+.card {
+    margin: 20px 0;
+    border: none;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    height: 420px;
+}
+
+.card-title {
+    font-size: 24px;
+    color: #003366;
+    margin-top: 10px;
+}
+
+.card-text {
+    font-size: 16px;
+    color: #666;
+}
+
+
+.service-card-image {
+    width: 70%; /* Ensure the image takes 100% width of the container */
+    height: auto; /* Automatically adjust the height to maintain aspect ratio */
+    display: block; /* Remove any extra space around the image */
+    margin: 0 auto; /* Center the image horizontally */
 }

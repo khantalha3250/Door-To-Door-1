@@ -1,5 +1,7 @@
 /* Add your custom styles here */
-
+html{
+    font-size: 10px;
+}
 body {
     background-color: #fff;
     color: #24262b;
@@ -50,3 +52,6 @@ body {
     80% { transform: translate(5px, 0); }
     100% { transform: translate(0, 0); }
 }
+/* service.html css */
+/* Custom styles for the services cards */
+/* Custom styles for the services cards */

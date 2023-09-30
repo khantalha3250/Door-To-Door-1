@@ -4,6 +4,7 @@ import {Link} from "react-router-dom"
 import nav from "../nav";
 function navbarElement(navelement){
    return <NavItem 
+   key={navelement.id}
     name= {navelement.name}
     liName={navelement.liName}
     icon={navelement.icon}
@@ -11,13 +12,13 @@ function navbarElement(navelement){
 />
 }
 function Header(){
-    return ( <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <Link class="navbar-brand" to="/"><i class="fas fa-door-open"></i> DOOR TO DOOR</Link>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+    return ( <nav className="navbar navbar-expand-lg navbar-light bg-light">
+    <Link className="navbar-brand" to="/"><i className="fas fa-door-open"></i> DOOR TO DOOR</Link>
+    <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span className="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
+    <div className="collapse navbar-collapse" id="navbarNav">
+        <ul className="navbar-nav ml-auto">
         {nav.map(navbarElement)}
         </ul>
     </div>
