@@ -11,6 +11,7 @@ function card(cardItem) {
         srcLink={cardItem.srcLink}
         title={cardItem.title}
         content={cardItem.subpara}
+        service={cardItem.service}
       />
     </div>
   </div>

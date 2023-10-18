@@ -18,6 +18,7 @@ const nav =[ {
     liName: "nav-item ",
     icon: "fas fa-envelope",
     link: "/contact" 
-}
+},
+
 ]
 export default nav
