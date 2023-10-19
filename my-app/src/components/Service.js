@@ -1,6 +1,6 @@
 import React from 'react'
 import ServiceCard from './ServiceCard'
-import content from '../serviceContent'
+import content from '../JSON/serviceContent'
 
 
 function card(cardItem) {

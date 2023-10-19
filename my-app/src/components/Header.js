@@ -1,7 +1,7 @@
 import React from "react";
 import NavItem from "./NavItem";
 import {Link} from "react-router-dom"
-import nav from "../nav";
+import nav from "..//JSON/nav";
 function navbarElement(navelement){
    return <NavItem 
    key={navelement.id}

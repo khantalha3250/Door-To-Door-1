@@ -3,7 +3,7 @@ import Input from './Input'
 import SocialMedia from './SocialMedia'
 import smDetails from './socialMediaContact'
 import TextArea from './TextArea'
-import contact from '../contact'
+import contact from '../JSON/contact'
 
 const ContactForm = (props) => {
   return (

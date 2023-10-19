@@ -1,5 +1,5 @@
 import React from 'react'
-import room from '../roomShifting'
+import room from '../JSON/roomShifting'
 import Input from './Input'
 
 const RoomShiftingForm = (props) => {
@@ -18,7 +18,7 @@ const RoomShiftingForm = (props) => {
             <p class="text-blk contactus-subhead">
               {props.service}
             </p>
-            <h3>Current room address:</h3>
+            <p>Current room address:</p>
             <div class="responsive-container-block">
               {room.map(detail=>(
                 <Input
@@ -32,7 +32,7 @@ const RoomShiftingForm = (props) => {
               ))}
               
             </div>
-            <h3>New room address:</h3>
+            <p>New room address:</p>
             <div class="responsive-container-block">
             {room.map(detail=>(
                 <Input

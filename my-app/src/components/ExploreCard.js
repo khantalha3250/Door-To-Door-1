@@ -32,9 +32,9 @@ const ExploreCard = (props) => {
 		<div class="description">
 			<h3>BENEFITS</h3>
 			<ul>
-				<li>{props.benifit1}</li>
-            <li>{props.benifit2}</li>
-            <li>{props.benifit3}</li>
+				<li>{props.benefit1}</li>
+            <li>{props.benefit2}</li>
+            <li>{props.benefit3}</li>
 			</ul>
 		</div>
 		<Link to={props.formPath}><button class="buy--btn">BOOK NOW</button></Link>
