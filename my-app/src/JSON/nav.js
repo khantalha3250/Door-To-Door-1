@@ -5,13 +5,7 @@ const nav =[ {
     icon: "fas fa-home",
     link: "/"
 },
- {
-    id:4,
-    name: "Login",
-    liName: "nav-item ",
-    icon: "fas fa-user",
-    link: "/login"
-},
+
 {   
     id:2,
     name: "About Us",

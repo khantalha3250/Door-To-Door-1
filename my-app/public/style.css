@@ -892,6 +892,11 @@ body {
   font-size: 16px;
   outline: none;
 }
+.register-error{
+  color: red;
+  font: 200;
+  text-align: center;
+}
 
 .login-button {
   background-color: #007bff;

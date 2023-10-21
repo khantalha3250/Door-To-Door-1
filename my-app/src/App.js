@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useState} from "react";
 import Header from "./components/Header";
 import Main from "./components/Main";
 import Footer from "./components/Footer";
@@ -12,16 +12,16 @@ import Authentication from "./components/Authentication";
 import Register from "./components/Register";
 
 function App() {
-  
+  const [user, setUser] = useState(null);
   return (
     <>
       <BrowserRouter>
-        <Header />
+        <Header user={user} setUser={setUser}/>
         <Routes>
           <Route path="/" element={<Main />} />
           <Route path="/services" element={<Service />} />
-          <Route path="/login" element={<Authentication />} />
-          <Route path="/register" element={<Register />} />
+          <Route path="/login" element={<Authentication setUser={setUser} />} />
+          <Route path="/register" element={<Register setUser={setUser}/>} />
           <Route
             path="/contact"
             element={
