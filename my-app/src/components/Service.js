@@ -12,17 +12,18 @@ function card(cardItem) {
         title={cardItem.title}
         content={cardItem.subpara}
         service={cardItem.service}
+        user={cardItem.user}
       />
     </div>
   </div>
   </div>)
 }
-const Service = () => {
+const Service = ({user}) => {
   return (
     <div>
       <div className="container">
         <div className="row">
-            {content.map(card)}
+        {content.map((cardItem) => card({ ...cardItem, user }))}
         </div>
       </div>
     </div>

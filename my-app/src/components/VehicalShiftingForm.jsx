@@ -1,5 +1,5 @@
 import React from "react";
-import room from "../JSON/roomShifting";
+import {room} from "../JSON/roomShifting";
 import Input from "./Input";
 
 const VehicalShiftingForm = (props) => {

@@ -912,3 +912,113 @@ body {
 button:hover {
   background-color: #0056b3;
 }
+/* summary css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.color-tobackground {
+  background-size: cover;
+  background-color:  hsl(225, 100%, 94%);
+  font-size: 16px;
+  font-family:  sans-serif;
+}
+
+.card-summary {
+  width: 450px;
+  background-color: white;
+  color: hsl(224, 23%, 55%);
+  border-radius: 20px;
+  margin: 50px auto;
+  overflow: hidden;
+}
+
+.title-order {
+  color: hsl(223, 47%, 23%);
+  font-weight: 900;
+  font-size: 32px;
+}
+
+.hero-image {
+  width: 100%;
+}
+
+.data-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 30px;
+  font-size: 18px;
+}
+
+.data-container > * {
+  margin: 13px 0;
+}
+
+.data-container strong {
+  color: hsl(223, 47%, 23%);
+}
+
+.order-description {
+  line-height: 25px;
+}
+
+.amount-container {
+  font-size: 16px;
+  background-color: hsl(225, 100%, 98%);
+  padding: 25px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.amount-container a {
+  color: hsl(245, 75%, 52%);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.amount-container a:hover {
+  text-decoration: none;
+}
+
+.amount-description {
+  margin-right: 75px;
+  line-height: 20px;
+}
+
+.proceed-button-order,cancel-button-order {
+  width: 100%;
+  border: none;
+  font-weight: 700;
+  font-size: 0.9rem;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.cancel-button-order {
+  background-color: white;
+  color: hsl(245, 75%, 52%);
+  border: none;
+  margin-top: 22px;
+}
+
+.cancel-button-order:hover {
+  color: black;
+}
+
+.proceed-button-order {
+  background-color: hsl(245, 75%, 52%);
+  padding: 1rem 0;
+  color: white;
+  box-shadow: 0 20px 30px -8px rgb(197 189 245);
+}
+
+.proceed-button-order:hover {
+  background-color:  hsl(244, 83%, 68%);
+}

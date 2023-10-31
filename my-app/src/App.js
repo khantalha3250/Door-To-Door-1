@@ -1,4 +1,4 @@
-import React,{useState} from "react";
+import React, { useState } from "react";
 import Header from "./components/Header";
 import Main from "./components/Main";
 import Footer from "./components/Footer";
@@ -10,18 +10,19 @@ import RoomShiftingForm from "./components/RoomShiftingForm";
 import VehicalShiftingForm from "./components/VehicalShiftingForm";
 import Authentication from "./components/Authentication";
 import Register from "./components/Register";
+import Summary from "./components/Summary";
 
 function App() {
   const [user, setUser] = useState(null);
   return (
     <>
       <BrowserRouter>
-        <Header user={user} setUser={setUser}/>
+        <Header user={user} setUser={setUser} />
         <Routes>
           <Route path="/" element={<Main />} />
-          <Route path="/services" element={<Service />} />
+          <Route path="/services" element={<Service user={user} />} />
           <Route path="/login" element={<Authentication setUser={setUser} />} />
-          <Route path="/register" element={<Register setUser={setUser}/>} />
+          <Route path="/register" element={<Register setUser={setUser} />} />
           <Route
             path="/contact"
             element={
@@ -36,6 +37,7 @@ function App() {
             path="room-shifting"
             element={
               <ExploreCard
+                
                 serviceLink="house_del.jpg"
                 serviceHeading="Home Transmutation Wizards"
                 serviceDescription="Shift your room to a magical realm with our wizardry!"
@@ -51,6 +53,7 @@ function App() {
             path="vehical-shifting"
             element={
               <ExploreCard
+              
                 serviceLink="Vehicle-Shifting-in-Mumbai-.jpg"
                 serviceHeading=" The Auto Relocation Conjurers"
                 serviceDescription="Entrust your sleeping chariots to our mystical hands"
@@ -66,6 +69,7 @@ function App() {
             path="package-shifting"
             element={
               <ExploreCard
+                
                 serviceLink="APS_28.jpg"
                 serviceHeading="The Parcel Portation Enchanters"
                 serviceDescription="Watch as we wield the power of swift delivery"
@@ -81,6 +85,7 @@ function App() {
             path="room-shifting-form"
             element={
               <RoomShiftingForm
+              user={user}
                 formTitle="DOOR TO DOOR"
                 service="🏠Room Shifting - The Home Transmutation Wizards✨"
                 buttonName="Proceed"
@@ -105,6 +110,12 @@ function App() {
                 service="📦Package Delivery - The Parcel Portation Enchanters🪄"
                 buttonName="Proceed"
               />
+            }
+          />
+          <Route
+            path="summary"
+            element={
+              <Summary/>
             }
           />
         </Routes>
